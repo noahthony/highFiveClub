@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="css/assets/highFiveClub.png" type="image/x-icon">
+    <title>High Five Club</title>
+    <!-- style sheet  -->
+    <link rel="stylesheet" href="css/core.css">
+    <!-- main script  -->
+    <script defer src="js/core.js"></script>
+</head>
+<body>
+    <!-- page header and main navigation  -->
+    <header>
+        <h1><img src="css/assets/highFiveClub.png" alt="high five icon"> Club</h1>
+        <p>something in here...</p>
+    </header>
+    <!-- main wrapper  -->
+
+    <div class="container">
+        <!-- progression bar -->
+        <div class="progression-bar">
+            <div id="progress"></div>
+            <p class="step-col"><small>Step 1</small></p>
+            <p class="step-col"><small>Step 2</small></p>
+            <p class="step-col"><small>Step 3</small></p>
+            <p class="step-col"><small>Step 4</small></p>
+            <p class="step-col"><small>Done</small></p>
+        </div>
+
+        <!-- reservation form  -->
+        <form action="" method="post" id="reservation-form">
+            <!-- form 1/5 -->
+            <div class="forms" id="form1">
+                <fieldset>
+                    <legend>Choose your formula</legend>
+
+                    <div class="position-block">
+                        <label for="formula-choice">Formula:</label>
+                        <br>
+                        <select name="formula" id="formula">
+                            <option selected value="none">-- Choose a formula --</option>
+                            <option value="formula1">Formula 1</option>
+                            <option value="formula2">Formula 2</option>
+                            <option value="formula3">Formula 3</option>
+                            <option value="custom-formula">Custom Formula</option>
+                        </select>
+                        <p class="warning">You're required to choose a formula *</p>
+                    </div>
+                </fieldset>
+                <div class="form-navigation">
+                    <button type="button" id="next1">Next</button>
+                </div>
+            </div>
+
+            <!-- form 2/5 -->
+            <div class="forms" id="form2">
+                <fieldset>
+                    <legend>Your Contact Informations</legend>
+                    <div class="position-block">
+                        <select name="customer-title" id="title">
+                            <option selected value="none">-- Mr./Mrs./Ms. --</option>
+                            <option value="mr">Mr.</option>
+                            <option value="mrs">Mrs.</option>
+                            <option value="ms">Ms.</option>
+                        </select>
+                        <p class="warning">You're required to choose a title *</p>
+                        <br>
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <p class="warning">you're required to provide you name *</p>
+                        <br>
+                        <input type="text" name="surname" id="surname" placeholder="Surname">
+                        <p class="warning">You're required to provide your surname *</p>
+                        <br>
+                        <input type="tel" name="phone" id="phone" placeholder="Phone number">
+                        <p class="warning">You're required to provide your phone number</p>
+                        <br>
+                        <input type="email" name="email" id="email" placeholder="e-mail">
+                        <p class="warning">You're required to provide your email</p>
+                    </div>
+                </fieldset>
+                <div class="form-navigation">
+                    <button type="button" id="prev1">Back</button>
+                    <button type="button" id="next2">Next</button>
+                </div>
+            </div>
+
+            <!-- form 3/5 -->
+            <div class="forms" id="form3">
+                <fieldset>
+                    <legend>Your project</legend>
+                    <div class="position-block">
+                        <label for="project">Select your project:</label>
+                        <br>
+                        <select name="client-project" id="project">
+                            <option value="none">-- choose an event --</option>
+                            <option value="ceremony">Ceremony</option>
+                            <option value="travel">Travel</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="presentation">Presentation</option>
+                            <option value="donation">Donation</option>
+                        </select>
+                        <p class="warning">You're required to select one of the projects</p>
+                    </div>
+                </fieldset>
+                <div class="form-navigation">
+                    <button type="button" id="prev2">Back</button>
+                    <button type="button" id="next3">Next</button>
+                </div>
+            </div>
+
+            <!-- form 4/5 -->
+            <div class="forms" id="form4">
+                <fieldset id="services">
+                    <legend>Our Services</legend>
+                    <div class="position-block">
+                        <p>Select the services you want from us:</p>
+                        <p class="warning">Please select at least one service </p>
+                        <label><input type="checkbox" name="babysit" id="babysit"> Baby-sitting</label>
+                        <br>
+                        <label><input type="checkbox" name="decoration" id="decoration"> Decoration</label>
+                        <br>
+                        <label><input type="checkbox" name="cleaning" id="cleaning"> Cleaning</label>
+                        <br>
+                        <label><input type="checkbox" name="photography" id="photography"> Photography</label>
+                        <br>
+                        <label><input type="checkbox" name="treatment" id="treatment"> Treatment</label>
+                        <br>
+                        <label><input type="checkbox" name="logistic" id="logistic"> Logistic</label>
+                        <br>
+                        <label><input type="checkbox" name="hall" id="hall"> Hall</label>
+                        <br>
+                        <label><input type="checkbox" name="security" id="security"> Security</label>
+                        <br>
+                        <label><input type="checkbox" name="sound" id="sound"> Sound System</label>
+                        <br>
+                        <label><input type="checkbox" name="transport" id="transport"> Transportation</label>
+                        <br>
+                        <label><input type="checkbox" name="videography" id="videography"> Videography</label>
+                        <br>
+                    </div>
+                </fieldset>
+                <div class="form-navigation">
+                    <button type="button" id="prev3">Back</button>
+                    <button type="button" id="next4">Next</button>
+                </div>
+            </div>
+
+            <!-- form 5/5 -->
+            <div class="forms" id="form5">
+                <fieldset>
+                    <legend>Details</legend>
+                    <div class="position-block">
+                        <label for="customer-details">Details / Desciptions (Optional)</label>
+                        <br>
+                        <br>
+                        <textarea cols="38" rows="12" placeholder="tell us a custom detail or a brief explanation of your project that couldn't be specified"></textarea>
+                    </div>
+                </fieldset>
+                <div class="form-navigation">
+                    <button type="button" id="prev4">Back</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+            
+            
+            
+        </form>
+    </div>
+
+    <footer>
+        <p>something in here...</p>
+    </footer>
+</body>
+</html>
